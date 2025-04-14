@@ -1,0 +1,23 @@
+[
+  {
+    "img_url": "https://img.freepik.com/free-photo/abu-dhabi-seascape-with-skyscrapers_181624-11582.jpg?t=st=1743543714~exp=1743547314~hmac=8cdd5ebde233ec7617cc6a24c7448c20235e1cb658c8fe97423b89eea393b59e&w=1380",
+    "name": "united arab emirates",
+    "continent": "asia"
+  },
+  {
+    "img_url": "https://img.freepik.com/free-photo/travel-mediterranean-aegean-traditional-architecture_1203-4774.jpg?t=st=1743543821~exp=1743547421~hmac=b719bd4864238f393cc32aa5454bd588e45dbe3ce050390f190cf463acdf6c81&w=1380",
+    "name": "greece",
+    "continent": "europe"
+  },
+ 
+  {
+    "img_url": "https://img.freepik.com/free-photo/shot-numerous-boats-berthed-by-pier-straight-lines-sunset_181624-26369.jpg?t=st=1743543787~exp=1743547387~hmac=48644d0f7236838768b70096ace7ea3c76bbc824f14a38aea487c320da79f1d2&w=1380",
+    "name": "aswan egypt",
+    "continent": "africa"
+  },
+  {
+    "img_url": "https://img.freepik.com/free-photo/travel-mediterranean-aegean-traditional-architecture_1203-4774.jpg?t=st=1743543821~exp=1743547421~hmac=b719bd4864238f393cc32aa5454bd588e45dbe3ce050390f190cf463acdf6c81&w=1380",
+    "name": "greece",
+    "continent": "europe"
+  }
+]
