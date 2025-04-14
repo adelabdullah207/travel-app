@@ -32,7 +32,6 @@ export default function Home() {
             search your{" "}
             <span className="lg:text-5xl md:text-3xl text-xl relative">
               holiday
-              <div className="absolute bottom-2 right-0 w-full h-1 opacity-85 bg-gradient-to-bl from-cyan-800 to-cyan-300"></div>
             </span>
           </motion.h1>
           <motion.div

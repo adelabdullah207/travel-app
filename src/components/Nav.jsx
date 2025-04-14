@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-import "../styles/nav.css";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { FaWindowClose } from "react-icons/fa";
 import { TbGridDots } from "react-icons/tb";
 import { Element } from "react-scroll";
-
+import { motion } from "framer-motion";
 export default function Nav() {
   const [mobileNavIcon, setMobileNavIcon] = useState(false);
   return (
-    <section className="absolute top-0 left-0 z-40 w-full bg-white">
+    <section className=" w-full bg-white">
       <div className="shadow-2xl">
         <div className="container w-[90%] m-auto ">
           <Element name="nav">
@@ -57,43 +56,39 @@ export default function Nav() {
               </button>
               {/* open */}
 
-              <ul
-                className={`md:hidden nav p-4 ${
-                  mobileNavIcon ? "open-nav" : "close-nav"
-                } `}
-              >
-                <li className="text-end">
-                  <button
-                    onClick={() => setMobileNavIcon(!mobileNavIcon)}
-                    className="cursor-pointer hover:text-red-500 transition-all duration-200"
-                  >
-                    <FaWindowClose size={35} />
-                  </button>
-                </li>
-                <li className="border-b-1 py-3">
-                  <a href="">home</a>
-                </li>
-                <li className="border-b-1 py-3">
-                  <a href="">packages</a>
-                </li>
-                <li className="border-b-1 py-3">
-                  <a href="">shop</a>
-                </li>
-                <li className="border-b-1 py-3">
-                  <a href="">about</a>
-                </li>
-                <li className="border-b-1 py-3">
-                  <a href="">news</a>
-                </li>
-                <li className="border-b-1 py-3">
-                  <a href="">contact</a>
-                </li>
-                <li className="py-3">
-                  <button className="text-white p-3 rounded-full bg-gradient-to-bl from-cyan-800 to-cyan-300 uppercase cursor-pointer">
-                    book now
-                  </button>
-                </li>
-              </ul>
+              {mobileNavIcon && (
+                <motion.ul
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  className="md:hidden absolute z-40 top-10 left-0 bg-white w-full flex justify-center text-center flex-col"
+                >
+                  <li className="border-b-1 py-3">
+                    <a href="">home</a>
+                  </li>
+                  <li className="border-b-1 py-3">
+                    <a href="">packages</a>
+                  </li>
+                  <li className="border-b-1 py-3">
+                    <a href="">shop</a>
+                  </li>
+                  <li className="border-b-1 py-3">
+                    <a href="">about</a>
+                  </li>
+                  <li className="border-b-1 py-3">
+                    <a href="">news</a>
+                  </li>
+                  <li className="border-b-1 py-3">
+                    <a href="">contact</a>
+                  </li>
+                  <li className="py-3">
+                    <button className="text-white p-3 rounded-full bg-gradient-to-bl from-cyan-800 to-cyan-300 uppercase cursor-pointer">
+                      book now
+                    </button>
+                  </li>
+                </motion.ul>
+              )}
 
               {/* end of mobile nav */}
             </header>
